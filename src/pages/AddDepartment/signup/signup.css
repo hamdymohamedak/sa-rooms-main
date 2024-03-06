@@ -1,0 +1,111 @@
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-form {
+    border: 1px solid #b1b1b1;
+    width: auto;
+    height: auto;
+    border-radius: 9px;
+}
+.container-cus{
+    border: 1px solid #b1b1b1;
+    width: 350px;
+    height: auto;
+    border-radius: 9px;
+}
+
+.color-green {
+    color: #018D36;
+}
+
+.colmun {
+    flex-direction: column;
+}
+
+.input {
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #C7C7C7;
+    padding: 5px;
+    width: 100%;
+    color: #212529 !important;
+}
+
+input,
+::placeholder {
+    direction: rtl;
+    text-align: start;
+    unicode-bidi: plaintext;
+    color: #b1b1b1 !important;
+}
+
+.color-gray{
+    color:rgba(0, 0, 0, 0.5);
+    font-size: smaller;
+}
+.input-number{
+    width: 50px;
+    height: 40px; 
+    border-radius: 5px;
+    text-align: center;
+    outline: none;
+    border: 1px solid #C7C7C7;
+}
+.input-date{
+    width: 70px;
+    height: 40px; 
+    border-radius: 5px;
+
+    outline: none;
+    border: 1px solid #C7C7C7;
+    padding: 5px;
+}
+
+.phone {
+    direction: ltr;
+    
+}
+
+.react-international-phone-input {
+    width:100%;
+    height: 45px !important;
+    font-size: larger !important;
+}
+
+.react-international-phone-country-selector-button__button-content {
+    height: 45px !important;
+}
+
+.react-international-phone-country-selector-dropdown {
+    width: 300px !important;
+}
+
+.fieldset {
+    border-bottom: solid 2px #fff;
+    border-left: solid 2px #fff;
+    border-right: solid 2px #fff;
+}
+
+.legend {
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.fs-7{
+    font-size: smaller;
+}
+.mt-6 {
+    margin-top: 34px;
+}
+.react-international-phone-country-selector-button{
+    height: 45px !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+}

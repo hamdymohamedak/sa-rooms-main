@@ -1,0 +1,292 @@
+.navbar_container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0rem;
+  align-items: center;
+}
+
+.navbar_container svg,
+.navbar_slider svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.navbar_container svg path,
+.navbar_slider svg path {
+  fill: white;
+}
+
+.logo_container {
+  width: 5rem;
+  height: 5rem;
+}
+
+.logo_container img {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.search_container {
+  border: 1px solid var(--borderColor);
+  display: none;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 100px;
+  height: 2.1rem;
+  padding: 1.4rem 0.35rem;
+  padding-right: 1rem;
+}
+
+.navbar_slider .search_container {
+  gap: 2rem;
+}
+
+.middle_container .search_container {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .middle_container .search_container {
+    display: flex;
+    gap: 0.8rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .right_container .search_container {
+    display: flex;
+  }
+}
+
+.v_line {
+  width: 1px;
+  height: 2rem;
+  background-color: var(--borderColor);
+}
+.h_line {
+  width: 100%;
+  height: 1px;
+  background-color: var(--borderColor);
+}
+
+.field h6 {
+  cursor: default;
+  font-weight: 900;
+  /* width: 15ch; */
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+.field p,
+.react-datepicker-wrapper input {
+  font-size: 1rem;
+  font-weight: 900;
+  color: var(--primary);
+  cursor: pointer;
+}
+input::placeholder {
+  color: black;
+  font-weight: 900er;
+}
+
+.search_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 1000px;
+  background: var(--primary);
+}
+
+.search_button img {
+  width: 1.7rem;
+  height: 1.7rem;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.left_container,
+.right_container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.signButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--primary);
+  border-radius: 50px;
+  color: white;
+  height: 46.8px;
+  padding-inline: 1.685rem;
+}
+
+.signButton img {
+  width: 1.7rem;
+  height: 1.7rem;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.signButton span {
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+/* slider */
+.navbar_slider {
+  display: none;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: white;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  z-index: 1000;
+  transform: translate(-50%, -100%);
+  transition: transform 0.3s ease-out;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+.navbar_slider .search_container {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .navbar_slider {
+    display: flex;
+  }
+}
+
+.navbar_slider.show {
+  transform: translate(-50%, 0);
+}
+
+.navbar_slider .top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navbar_slider .bottom .search_container {
+  width: max-content;
+  margin-inline: auto;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem 1.8rem;
+  padding-left: 0.4rem;
+  /* height: 3rem; */
+  height: max-content;
+}
+
+.navbar_slider .bottom .search_container .travellers svg path {
+  fill: var(--primary);
+}
+
+.navbar_slider .bottom .search_container .travellers .type_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.navbar_slider .bottom .search_container .travellers .type_container .number {
+  font-weight: 900;
+}
+
+.navbar_slider
+  .bottom
+  .search_container
+  .travellers
+  .type_container
+  .left_container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navbar_slider
+  .bottom
+  .search_container
+  .travellers
+  .type_container
+  .right_container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.3rem;
+}
+
+.navbar_slider .bottom .search_container .search_button {
+  width: 3rem;
+  height: 3rem;
+}
+
+@media (max-width: 768px) {
+  .middle_container {
+    width: 100%;
+    margin: 16.405px 0;
+  }
+  .middle_container .search_container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .left_container {
+    display: none;
+  }
+  .right_container {
+    display: none;
+  }
+}
+
+/* --------------------- datepicker --------------------- */
+.react-datepicker__day--selected {
+  background-color: var(--primary) !important;
+}
+
+.react-datepicker__day--keyboard-selected,
+.react-datepicker__month-text--keyboard-selected,
+.react-datepicker__quarter-text--keyboard-selected,
+.react-datepicker__year-text--keyboard-selected {
+  background: none !important;
+}
+
+.react-datepicker select {
+  height: 2rem;
+  font-size: 0.8rem;
+  padding-inline: 0.5rem;
+}
+
+/* ------------------------------------------------------ */
+
+.type_container .left_container,
+.type_container .right_container {
+  display: flex !important;
+}
+
+.types_container {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;  */
+  gap: 1rem;
+}
+
+.types_container .type_container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.types_container .type_container svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.types_container .type_container h4 {
+  font-weight: 900;
+}

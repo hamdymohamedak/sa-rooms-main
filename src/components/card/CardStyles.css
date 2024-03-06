@@ -1,0 +1,103 @@
+.card_container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 4px solid rgba(0, 0, 0, 0.04);
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.card_container .flat_image {
+  height: 300px;
+  width: 100%;
+}
+
+.card_container .card_content {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 0.3rem;
+}
+.card_container h4 {
+  font-weight: 800;
+  font-size: 1.4rem;
+}
+
+.card_container p.location {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.card_container p.date {
+  font-size: 1.2rem;
+}
+
+.card_container p.price {
+  color: var(--primary);
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.card_container .reviews_badge {
+  position: absolute;
+  top: 1rem;
+  right: 0.5rem;
+  background: white;
+  backdrop-filter: blur(396.5px);
+  border-radius: 5px;
+  padding: 0.3rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+  border-radius: 14px;
+}
+
+.card_container .starIcon {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+/* ------------------- isCategoryCard ------------------- */
+
+.card_container .wishlist_icon {
+  position: absolute;
+  top: 1rem;
+  right: 0.5rem;
+
+}
+
+.card_container .wishlist_icon svg {
+  fill: white;
+  width: 2.5rem;
+  transition: all 0.15s ease-out;
+}
+
+.card_container .wishlist_icon:hover svg {
+  transform: scale(1.1);
+}
+
+.card_container .price_one_night {
+  color: var(--primary);
+}
+
+.card_container .properties {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card_container .properties li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.card_container .properties li svg {
+  fill: var(--primary);
+}
